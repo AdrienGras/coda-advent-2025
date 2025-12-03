@@ -15,3 +15,4 @@ Ce dépot contient mes solutions pour le calendrier de l'avent Coda 1015.
 |------|----------|-------------|
 | 01 | [Message codé](./jour-01/) | 🐘 PHP |
 | 02 | [Le comptage de renne](./jour-02/) | 🅲️ C |
+| 03 | [Correction des droits](./jour-03/) | 🐚 Bash (shell) |

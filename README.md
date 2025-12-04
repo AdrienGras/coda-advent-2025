@@ -11,8 +11,9 @@ Ce dépot contient mes solutions pour le calendrier de l'avent Coda 1015.
 
 ## Solutions
 
-| Jour | Solution | Technologie |
-|------|----------|-------------|
-| 01 | [Message codé](./jour-01/) | 🐘 PHP |
-| 02 | [Le comptage de renne](./jour-02/) | 🅲️ C |
-| 03 | [Correction des droits](./jour-03/) | 🐚 Bash (shell) |
+| Jour | Solution | Technologie | Commentaire |
+|------|----------|-------------|-------------|
+| 01 | [Message codé](./jour-01/) | 🐘 PHP | |
+| 02 | [Le comptage de renne](./jour-02/) | 🅲️ C | |
+| 03 | [Correction des droits](./jour-03/) | 🐚 Bash (shell) | ⚠️ A ne pas utiliser en prod à cause du `sudo` nécessaire |
+| 04 | [Comptage des calories](./jour-04/) | 🦀 Rust | Complexité spatiale : O(1), complexité temporelle : O(n) |

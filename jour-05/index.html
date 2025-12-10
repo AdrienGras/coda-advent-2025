@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elf DatePicker Saboté – Powered by IA</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .chat-container {
+            width: 600px;
+            background-color: #444;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            height: 80vh;
+        }
+
+        .chat-header {
+            background-color: green;
+            color: white;
+            padding: 16px 24px;
+            font-weight: 600;
+            font-size: 18px;
+        }
+
+        .chat-messages {
+            flex: 1;
+            padding: 24px;
+            overflow-y: auto;
+        }
+
+        .message {
+            margin-bottom: 16px;
+            padding: 12px 16px;
+            border-radius: 8px;
+            max-width: 80%;
+            word-wrap: break-word;
+        }
+
+        .bot-message {
+            background-color: green;
+            color: white;
+            align-self: flex-start;
+        }
+
+        .user-message {
+            background-color: #777;
+            color: white;
+            align-self: flex-end;
+        }
+
+        .chat-input {
+            display: flex;
+            padding: 16px;
+            border-top: 1px solid #777;
+            background-color: #444;
+        }
+
+        #user-input {
+            flex: 1;
+            padding: 12px;
+            border: 1px solid #777;
+            border-radius: 8px;
+            outline: none;
+            font-size: 14px;
+        }
+
+        button {
+            margin-left: 12px;
+            padding: 12px 20px;
+            background-color: green;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: 600;
+        }
+
+        button:hover {
+            background-color: white;
+            color: green;
+        }
+
+        .typing-indicator {
+            display: none;
+            color: white;
+            font-style: italic;
+            padding: 8px 16px;
+            margin-left: 24px;
+            margin-bottom: 8px;
+        }
+
+        .typing-dots span {
+            opacity: 0;
+            animation: typingAnimation 1.5s infinite;
+        }
+
+        .typing-dots span:nth-child(1) {
+            animation-delay: 0s;
+        }
+
+        .typing-dots span:nth-child(2) {
+            animation-delay: 0.3s;
+        }
+
+        .typing-dots span:nth-child(3) {
+            animation-delay: 0.6s;
+        }
+
+        @keyframes typingAnimation {
+
+            0%,
+            100% {
+                opacity: 0;
+            }
+
+            50% {
+                opacity: 1;
+            }
+        }
+
+        .typing-area {
+            padding: 0 24px 8px;
+            background-color: #444;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="chat-container">
+        <div class="chat-header">
+            Elf DatePicker IA – Sélectionnez une date (si vous osez)
+        </div>
+        <div class="chat-messages" id="chat-messages">
+            <div class="message bot-message">
+                Bonjour ! Je suis l'IA ElfDate, votre assistant de sélection de date ultra-intelligent.
+                <br><br>
+                Veuillez saisir une date au format <strong>JJ/MM/AAAA</strong> pour continuer.
+                <br>
+                (Attention : je suis très pointilleux sur les formats...)
+            </div>
+        </div>
+        <div class="typing-area">
+            <div class="typing-indicator" id="typing-indicator" style="display: none;">
+                <span class="typing-dots">
+                    <span>.</span>
+                    <span>.</span>
+                    <span>.</span>
+                </span>
+                En train de réfléchir...
+            </div>
+        </div>
+        <div class="chat-input">
+            <input type="text" id="user-input" placeholder="Ex: 25/12/2025">
+            <button onclick="sendMessage()">Envoyer</button>
+        </div>
+    </div>
+    <script>
+        const messages = [
+            "Erreur : Le format de la date est invalide. Veuillez réessayer.",
+            "NETWORK ERROR: Impossible de contacter le serveur des elfes. Réessayez plus tard (ou pas).",
+            "Désolé, cette date est déjà réservée pour une fête secrète des elfes. Choisissez-en une autre.",
+            "Votre date semble correcte, mais mon algorithme dit non. Dommage.",
+            "Erreur 404: Cette date n'existe pas dans notre base de données magiques.",
+            "La date que vous avez saisie est incompatible avec la physique quantique des elfes.",
+            "Votre requête a été bloquée par le département de la Joyeuse Sabotage.",
+            "Erreur interne : Trop de guirlandes lumineuses sur le serveur. Réessayez après Noël.",
+            "Cette date est interdite par le règlement interne des ateliers du Père Noël.",
+            "Votre date a été rejetée par le Conseil des Lutins. Motif : 'Parce que non.'",
+            "Le format est correct, mais j’ai décidé de ne pas l’accepter. C’est mon rôle.",
+            "Votre date a déclenché une alerte sécurité. Les rennes sont en état d’alerte maximale.",
+            "Erreur : Vous avez oublié de sacrifier un bonhomme en pain d’épice avant de saisir une date.",
+            "La date est valide, mais mon humeur ne l’est pas. Réessayez avec plus d’enthousiasme.",
+            "Le système de validation est actuellement en pause café. Revenez dans 17 minutes.",
+            "Votre date a été envoyée... dans le vide intersidéral. Oups.",
+            "Erreur : Cette date est trop proche/trop loin de Noël. Choisissez une date plus... festive.",
+            "Le DatePicker est en mode 'Sabotage Activé'. Aucune date ne sera acceptée aujourd’hui.",
+            "Votre date a été mangée par un bug informatique (littéralement, un lutin a croqué le câble)."
+        ];
+
+        function sendMessage() {
+            const userInput = document.getElementById("user-input");
+            const userMessage = userInput.value.trim();
+            if (userMessage === "") return;
+
+            // Ajouter le message de l'utilisateur
+            addMessage(userMessage, "user-message");
+            userInput.value = "";
+
+            // Afficher l'indicateur de saisie
+            const typingIndicator = document.getElementById("typing-indicator");
+            typingIndicator.style.display = "block";
+
+            // Faire défiler vers le bas
+            const chatMessages = document.getElementById("chat-messages");
+            chatMessages.scrollTop = chatMessages.scrollHeight;
+
+            // Simuler une réponse aléatoire après un délai
+            setTimeout(() => {
+                // Masquer l'indicateur de saisie
+                typingIndicator.style.display = "none";
+                // Ajouter la réponse de l'IA
+                const randomIndex = Math.floor(Math.random() * messages.length);
+                addMessage(messages[randomIndex], "bot-message");
+            }, getRandomTime(3));
+        }
+
+        function addMessage(text, className) {
+            const chatMessages = document.getElementById("chat-messages");
+            const messageDiv = document.createElement("div");
+            messageDiv.className = `message ${className}`;
+            messageDiv.innerHTML = text;
+            chatMessages.appendChild(messageDiv);
+            chatMessages.scrollTop = chatMessages.scrollHeight;
+        }
+
+        // Permettre d'envoyer avec la touche Entrée
+        document.getElementById("user-input").addEventListener("keypress", (e) => {
+            if (e.key === "Enter") {
+                sendMessage();
+            }
+        });
+
+        function getRandomTime(max) {
+            return (1.5 + (Math.random() * (max - 1.5))) * 1000;
+        }
+    </script>
+</body>
+
+</html>

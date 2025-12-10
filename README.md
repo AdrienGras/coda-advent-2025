@@ -19,3 +19,4 @@ Ce dépot contient mes solutions pour le calendrier de l'avent Coda 1015.
 | 04 | [Comptage des calories](./jour-04/) | 🦀 Rust | Complexité spatiale : O(1), complexité temporelle : O(n) |
 | 05 | [Sabotage de DatePicker](./jour-05/) | 📄 HTML, CSS, JS |
 | 06 | [Moyenne & tests unitaires](./jour-06/) | 🟦 TypeScript |
+| 07 | [Linters & code-smells (bad)](./jour-07/) | 🟦 TypeScript |

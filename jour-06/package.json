@@ -1,0 +1,16 @@
+{
+  "name": "weight",
+  "version": "1.0.0",
+  "dependencies": {
+    "typescript": "^5.3.3"
+  },
+  "scripts": {
+    "start": "tsc && node src/weightCalculator.js",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "@types/jest": "^30.0.0",
+    "jest": "^30.2.0",
+    "ts-jest": "^29.4.6"
+  }
+}

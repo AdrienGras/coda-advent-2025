@@ -1,5 +1,8 @@
-# C build files
+# C/ts build files
 **/build
 
 # Rust target directory
 **/target
+
+# Node modules
+**/node_modules

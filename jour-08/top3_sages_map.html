@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_44f9323ffbc57f096cc04296370d94b0 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_44f9323ffbc57f096cc04296370d94b0" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_44f9323ffbc57f096cc04296370d94b0 = L.map(
+                "map_44f9323ffbc57f096cc04296370d94b0",
+                {
+                    center: [48.875872202602984, 2.37020683674042],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 2,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_c645941583b5393f1acfed02eb5ed365 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_c645941583b5393f1acfed02eb5ed365.addTo(map_44f9323ffbc57f096cc04296370d94b0);
+        
+    
+            var marker_e299becfa88a021a36c8f09ce038e03b = L.marker(
+                [48.875872202602984, 2.37020683674042],
+                {
+}
+            ).addTo(map_44f9323ffbc57f096cc04296370d94b0);
+        
+    
+        var popup_0407286cc79fb1e88427e5f2df0a6b24 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0e83b760ce705e67bde40d4f3bc95e76 = $(`<div id="html_0e83b760ce705e67bde40d4f3bc95e76" style="width: 100.0%; height: 100.0%;">Astrid Lopez (Paris, France)<br>Score: 100.0</div>`)[0];
+                popup_0407286cc79fb1e88427e5f2df0a6b24.setContent(html_0e83b760ce705e67bde40d4f3bc95e76);
+            
+        
+
+        marker_e299becfa88a021a36c8f09ce038e03b.bindPopup(popup_0407286cc79fb1e88427e5f2df0a6b24)
+        ;
+
+        
+    
+    
+            var marker_ad3c3addba8488b39bb80177cd800028 = L.marker(
+                [39.91164444766509, 116.39161725675824],
+                {
+}
+            ).addTo(map_44f9323ffbc57f096cc04296370d94b0);
+        
+    
+        var popup_1b383ffc080fd7497efe7cdcb00d60a9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_63785c704d607561c048809d00749141 = $(`<div id="html_63785c704d607561c048809d00749141" style="width: 100.0%; height: 100.0%;">Isha Takahashi (Beijing, China)<br>Score: 100.0</div>`)[0];
+                popup_1b383ffc080fd7497efe7cdcb00d60a9.setContent(html_63785c704d607561c048809d00749141);
+            
+        
+
+        marker_ad3c3addba8488b39bb80177cd800028.bindPopup(popup_1b383ffc080fd7497efe7cdcb00d60a9)
+        ;
+
+        
+    
+    
+            var marker_d43e0b98222f97769410b1bc64e12f11 = L.marker(
+                [37.790593039065875, -122.41213060423046],
+                {
+}
+            ).addTo(map_44f9323ffbc57f096cc04296370d94b0);
+        
+    
+        var popup_5e6b9f9aa2402f5d7a20cda7c8c0c3c7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1787bb8e7c23d685913f5f58152b960f = $(`<div id="html_1787bb8e7c23d685913f5f58152b960f" style="width: 100.0%; height: 100.0%;">Omar Costa (San Francisco, United States)<br>Score: 100.0</div>`)[0];
+                popup_5e6b9f9aa2402f5d7a20cda7c8c0c3c7.setContent(html_1787bb8e7c23d685913f5f58152b960f);
+            
+        
+
+        marker_d43e0b98222f97769410b1bc64e12f11.bindPopup(popup_5e6b9f9aa2402f5d7a20cda7c8c0c3c7)
+        ;
+
+        
+    
+</script>
+</html>

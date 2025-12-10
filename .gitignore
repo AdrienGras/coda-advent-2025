@@ -6,3 +6,8 @@
 
 # Node modules
 **/node_modules
+
+# Python venv files
+**/venv
+**/.venv
+**/__pycache__

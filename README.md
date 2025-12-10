@@ -20,3 +20,4 @@ Ce dépot contient mes solutions pour le calendrier de l'avent Coda 1015.
 | 05 | [Sabotage de DatePicker](./jour-05/) | 📄 HTML, CSS, JS |
 | 06 | [Moyenne & tests unitaires](./jour-06/) | 🟦 TypeScript |
 | 07 | [Linters & code-smells (bad)](./jour-07/) | 🟦 TypeScript |
+| 08 | [Cartographie des enfants sages](./jour-08) | 🐍 Python |

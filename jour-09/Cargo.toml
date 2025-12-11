@@ -1,0 +1,10 @@
+[package]
+name = "jour-09"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+eyre = "0.6.12"
+
+[dev-dependencies]
+tempfile = "3"

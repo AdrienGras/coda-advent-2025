@@ -1,0 +1,21 @@
+{
+  "name": "building/navigation",
+  "description": "Building navigation",
+  "require": {
+    "php": ">=8.1",
+    "pestphp/pest": "^v2.36"},
+  "config": {
+    "allow-plugins": {
+      "pestphp/pest-plugin": true
+    }
+  },
+  "autoload": {
+    "psr-4": {
+      "Navigation\\": "src/Navigation",
+      "Tests\\": "tests"
+    }
+  },
+  "scripts": {
+    "test": "vendor/bin/pest"
+  }
+}

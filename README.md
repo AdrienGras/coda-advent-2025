@@ -22,3 +22,4 @@ Ce dépot contient mes solutions pour le calendrier de l'avent Coda 1015.
 | 07 | [Linters & code-smells (bad)](./jour-07/) | 🟦 TypeScript |
 | 08 | [Cartographie des enfants sages](./jour-08) | 🐍 Python |
 | 09 | [Calcul de distances](./jour-09/) | 🦀 Rust |
+| 10 | [Affectation des cadeaux](./jour-10/) | 🐘 PHP | |

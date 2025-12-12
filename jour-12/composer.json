@@ -1,0 +1,17 @@
+{
+  "name": "gift/selector",
+  "require": {
+    "php": ">=8.1",
+    "pestphp/pest": "^v2.36"
+  },
+  "config": {
+    "allow-plugins": {
+      "pestphp/pest-plugin": true
+    }
+  },
+  "autoload": {
+    "psr-4": {
+      "Gift\\": "src/Gift"
+    }
+  }
+}

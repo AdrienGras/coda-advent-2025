@@ -24,3 +24,4 @@ Ce dépot contient mes solutions pour le calendrier de l'avent Coda 1015.
 | 09 | [Calcul de distances](./jour-09/) | 🦀 Rust |
 | 10 | [Affectation des cadeaux](./jour-10/) | 🐘 PHP | |
 | 11 | [Calcul d'étage](./jour-11/) | 🐘 PHP | |
+| 12 | [Over-engineeringotron-4000](./jour-12) | 🐘 PHP | |

@@ -38,15 +38,15 @@ Le site est lent, peu éco-responsable et peu accessible, nécessitant des amél
 - Trop de requêtes JavaScript.
 - Taille du DOM trop grande.
 
-#### Recommandations :
+#### Recommandations :
 
-##### Optimisation des images :
+##### Optimisation des images
 
 - Compresser les images en utilisant des outils comme TinyPNG ou ImageOptim.
 - Convertir les images en formats modernes comme WebP ou AVIF.
 - Implémenter des images responsives en utilisant l'attribut srcset.
 
-##### Réduction des ressources bloquantes :
+##### Réduction des ressources bloquantes : 
 
 - Déplacer les scripts non critiques vers le bas de la page ou les charger de manière asynchrone en utilisant l'attribut async ou defer.
 - Utiliser des polices locales ou des polices système pour réduire les requêtes externes.
@@ -92,20 +92,20 @@ Le site est lent, peu éco-responsable et peu accessible, nécessitant des amél
 - Déplacer les scripts non critiques vers le bas de la page ou les charger de manière asynchrone en - utilisant l'attribut async ou defer.
 - Utiliser des polices locales ou des polices système pour réduire les requêtes externes.
 
-### Optimisation du JavaScript :
+### Optimisation du JavaScript
 
 - Minifier et compresser tous les fichiers JavaScript en utilisant des outils comme UglifyJS ou Terser.
 - Éviter les scripts inutiles et les dépendances lourds en auditant les scripts utilisés et en supprimant ceux qui ne sont pas nécessaires.
 - Implémenter le chargement paresseux pour les scripts non critiques en utilisant des bibliothèques comme lozad.js.
 
-### Amélioration de l'accessibilité :
+### Amélioration de l'accessibilité
 
 - Ajouter des attributs alt à toutes les images pour décrire leur contenu.
 - Organiser les éléments de heading de manière séquentielle (h1, h2, h3, etc.) pour faciliter la navigation.
 - Ajouter des labels aux éléments interactifs comme les boutons et les liens pour qu'ils soient accessibles via les lecteurs d'écran.
 - Vérifier le contraste des couleurs en utilisant des outils comme le Contrast Checker et ajuster les couleurs si nécessaire.
 
-### Optimisation du serveur :
+### Optimisation côté serveur
 
 - Améliorer le temps de réponse du serveur en optimisant les requêtes de base de données, en utilisant des caches et en améliorant l'infrastructure serveuse.
 - Appliquer une compression pour réduire la taille des ressources en utilisant des outils comme Gzip ou Brotli.

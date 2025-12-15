@@ -27,3 +27,4 @@ Ce dépot contient mes solutions pour le calendrier de l'avent Coda 1015.
 | 12 | [Over-engineeringotron-4000](./jour-12) | 🐘 PHP | |
 | 13 | [Audit & e-commerce d'elfe](./jour-13/) | ⛯ Lighthouse & GreenIT/EcoIndex | Merci à Mistral pour la rédaction |
 | 14 | [Comptage](./jour-14/) | 🦀 Rust | Complexité O(n) |
+| 15 | [Code review](./jour-15/) | Claude | |

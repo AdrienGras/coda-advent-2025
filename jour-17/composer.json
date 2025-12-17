@@ -1,0 +1,21 @@
+{
+  "require": {
+    "php": ">=8.1",
+    "pestphp/pest": "^v2.36.0",
+    "ext-openssl": "*"
+  },
+  "config": {
+    "allow-plugins": {
+      "pestphp/pest-plugin": true
+    }
+  },
+  "autoload": {
+    "psr-4": {
+      "Routing\\": "src/Routing",
+      "Tests\\": "tests"
+    }
+  },
+  "scripts": {
+    "test": "vendor/bin/pest"
+  }
+}

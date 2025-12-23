@@ -31,3 +31,5 @@ Ce dépot contient mes solutions pour le calendrier de l'avent Coda 1015.
 | 16 | [Prod qui tombe & cryptographie](./jour-16/) |  🐘 PHP | |
 | 17 | [NeverNester nightmares & refacto](./jour-17/) |  🐘 PHP | |
 | 18 | [GQS et base 5](./jour-18) | 🦀 Rust | Complexité O(n * m), O(1) |
+| 19 | [Konami code & surprise](./jour-19/) | 📄 HTML, CSS, JS |
+| 20 | [ls like CLI](./jour-20) | 🦀 Rust | |

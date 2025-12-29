@@ -34,3 +34,5 @@ Ce dépot contient mes solutions pour le calendrier de l'avent Coda 1015.
 | 19 | [Konami code & surprise](./jour-19/) | 📄 HTML, CSS, JS |
 | 20 | [ls like CLI](./jour-20) | 🦀 Rust | |
 | 21 | [détournement de cadeau](./jour-21) | 🐍 Python | Résultats dans le notebook |
+| 22 | [sapin CLI](./jour-22) | 🦀 Rust | Résultat https://asciinema.org/a/gpv7fV7SIVAJqwWdlXnNBhO2X |
+| 23 | [Crap Driven Development](./jour-23) | 🐘 PHP | |

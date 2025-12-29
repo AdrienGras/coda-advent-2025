@@ -5,7 +5,7 @@ use crossterm::{
     terminal::{Clear, ClearType, disable_raw_mode, enable_raw_mode, size},
 };
 use rand::Rng;
-use std::io::{Write, stdout};
+use std::io::stdout;
 use std::thread;
 use std::time::Duration;
 
@@ -86,7 +86,7 @@ fn main() {
                 for _ in 0..(height - row - 1) {
                     line.push(' ');
                 }
-                for col in 0..(2 * row + 1) {
+                for _ in 0..(2 * row + 1) {
                     line.push_str(&format!(
                         "{}▲{}",
                         SetForegroundColor(Color::Green),
